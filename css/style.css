@@ -4,11 +4,12 @@
   box-sizing: border-box;
 }
 :root {
-  --color-1: #0f044c;
-  --color-2: #141e61;
-  --color-3: #787a91;
-  --color-4: #eeeeee;
+    --color-1:#0F044C;
+    --color-2:#141E61;
+    --color-3:#787A91;
+    --color-4:#EEEEEE;
 }
+
 body {
   background-color: #080f29;
 }
@@ -186,3 +187,74 @@ body {
   position: relative;
   right: 450px;
 } */
+
+/*----------- ESTILO FOOTER ---------------*/
+
+ footer {
+  background-color: var(--color-1);
+  padding: 20px;
+}
+
+.col-3 ul li {
+  list-style: none;
+  padding: 5px;
+}
+.col-3 ul li a {
+  color: var(--color-4);
+  text-decoration: none;
+}
+
+.btn-codigo {
+  border: 1px solid var(--color-4);
+  color: var(--color-4);
+  margin-right: 10px;
+}
+.btn-codigo:hover {
+  background-color: #101643;
+  color: #eeeeee;
+}
+.container-redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-redes-sociales .fa-brands {
+  color: var(--color-4);
+  font-size: 2em;
+  margin: 20px;
+} */
+
+/*---------------- PAGINA 404 --------------------*/
+
+.img-bg {
+    height: 100vh;
+    background-image: url("../img/img-error-error.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.info-404 {
+   width: 600px;
+   padding: 30px;
+   margin: 0 auto;
+   background-color:rgba(215, 215, 215, 0.6);
+   text-align: center;
+
+}
+.info-404 h1 {
+  font-size: 3.5em;
+  font-weight: 200;
+}
+.info-404 p {
+  font-size: 1.3em;
+}
+
+.info-404 button a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 100;
+}
