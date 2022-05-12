@@ -191,7 +191,7 @@ body {
 /*----------- ESTILO FOOTER ---------------*/
 
  footer {
-  background-color: var(--color-1);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
 }
 
@@ -222,13 +222,13 @@ body {
   color: var(--color-4);
   font-size: 2em;
   margin: 20px;
-} */
+} 
 
 /*---------------- PAGINA 404 --------------------*/
 
 .img-bg {
     height: 100vh;
-    background-image: url("../img/img-error-error.jpg");
+    background-image: url("../img/img-404/img-error-error.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
