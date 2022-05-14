@@ -1,3 +1,10 @@
+/*---------------- Animacion al Boton toggler-------------------*/
+let burger = document.querySelector(".botonBurger");
+
+burger.addEventListener("click", () => {
+  burger.classList.toggle("active");
+});
+  
 const fila1 = document.querySelector(".contenedorJs1");
 const fila2 = document.querySelector(".contenedorJs2");
 const fila3 = document.querySelector(".contenedorJs3");
@@ -217,4 +224,5 @@ fila3.addEventListener("mouseleave", () => {
 });
 fila4.addEventListener("mouseleave", () => {
   peliculasFila4.forEach((pelicula) => pelicula.classList.remove("hover"));
+
 });
