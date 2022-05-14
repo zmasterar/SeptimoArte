@@ -152,8 +152,855 @@
         </div>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <div class="imagenesDestacadas">
+        <div
+          id="indicadoresDestacada"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#indicadoresDestacada"
+              data-bs-slide-to="0"
+              class="active bg-primary bg-gradient"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#indicadoresDestacada"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+              class="bg-primary bg-gradient"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#indicadoresDestacada"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+              class="bg-primary bg-gradient"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="pelicula-destacada pelicula1">
+                <div class="container">
+                  <h3 class="titulo">
+                    The Batman
+                    <span class="iconoDestacado"
+                      ><img
+                        src="../RollingProyecto2/img/img-Destacados/iconoDestacado.png"
+                        alt="icono destacado"
+                    /></span>
+                  </h3>
+
+                  <p class="description">
+                    Cuando un asesino se dirige a la élite de Gotham con una
+                    serie de maquinaciones sádicas, un rastro de pistas
+                    crípticas envía Batman a una investigación en los bajos
+                    fondos. A medida que las pruebas comienzan a acercarse a su
+                    casa y se hace evidente la magnitud de los planes del autor,
+                    Batman debe forjar nuevas relaciones, desenmascarar al
+                    culpable y hacer justicia al abuso de poder y la corrupción
+                    que durante mucho tiempo han asolado Gotham City.
+                  </p>
+                  <button type="button" class="btn boton">
+                    <i class="fa-solid fa-play"></i>Reproducir
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pelicula-destacada pelicula2">
+                <div class="container">
+                  <h3 class="titulo">
+                    Uncharted
+                    <span class="iconoDestacado"
+                      ><img
+                        src="../RollingProyecto2/img/img-Destacados/iconoDestacado.png"
+                        alt="icono destacado"
+                    /></span>
+                  </h3>
+
+                  <p class="description">
+                    Un descendiente del explorador Sir Francis Drake descubre la
+                    ubicación de la legendaria ciudad de El Dorado. Con la ayuda
+                    de su mentor Victor Sullivan y la ambiciosa periodista Elena
+                    Fischer, Nathan Drake trabajará para descubrir sus secretos,
+                    mientras sobreviven en una isla llena de piratas,
+                    mercenarios, y un misterioso enemigo, se embarcarán en una
+                    búsqueda sin precedentes por alcanzar el tesoro antes que
+                    sus perseguidores. Adaptación del aclamado videojuego
+                    homónimo.
+                  </p>
+                  <button type="button" class="btn boton">
+                    <i class="fa-solid fa-play"></i>Reproducir
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pelicula-destacada pelicula3">
+                <div class="container">
+                  <h3 class="titulo">
+                    Spider-Man: No Way Home
+                    <span class="iconoDestacado"
+                      ><img
+                        src="../RollingProyecto2/img/img-Destacados/iconoDestacado.png"
+                        alt="icono destacado"
+                    /></span>
+                  </h3>
+
+                  <p class="description">
+                    Peter Parker es desenmascarado y por tanto no es capaz de
+                    separar su vida normal de los enormes riesgos que conlleva
+                    ser un súper héroe. Cuando pide ayuda a Doctor Strange, los
+                    riesgos pasan a ser aún más peligrosos, obligándole a
+                    descubrir lo que realmente significa ser Spider-Man.
+                  </p>
+                  <button type="button" class="btn boton">
+                    <i class="fa-solid fa-play"></i>Reproducir
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container categorias ">
+        <div class="titulo-controles">
+          <h3>Populares</h3>
+          <div
+            class="indicadores containerIndicadores1 d-none d-xl-block"
+          ></div>
+        </div>
+        <div class="contenedorPrincipal">
+          <button
+            role="button"
+            id="flecha-izquierda"
+            class="flecha-izquierda d-none d-xl-block"
+            onclick="botonIzquierda1(this.id)"
+          >
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+          <div class="contenedorCarousel contenedorJs1">
+            <div class="carousel">
+              <div class="pelicula peliculaFila1">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/morbius.jpg"
+                    alt="pelicula Morbius"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila1">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/drstrange.jpg"
+                    alt="pelicula Duna"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila1">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/animales.jpg"
+                    alt="pelicula Animales Fantasticos"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila1">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/matrix.jpg"
+                    alt="pelicula Matrix"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila1">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/sonic.jpg"
+                    alt="pelicula Sonic"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila1">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/morbius.jpg"
+                    alt="pelicula Morbius"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila1">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/drstrange.jpg"
+                    alt="pelicula Dr.Strange"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila1">
+                <a href="#"
+                  ><img src="./img/img-categorias/duna.jpg" alt="pelicula Duna"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila1">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/animales.jpg"
+                    alt="pelicula Animales Fantasticos"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila1">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/matrix.jpg"
+                    alt="pelicula Matrix"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila1">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/sonic.jpg"
+                    alt="pelicula Sonic"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila1">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/morbius.jpg"
+                    alt="pelicula Morbius"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila1">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/drstrange.jpg"
+                    alt="pelicula Dr.Strange"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila1">
+                <a href="#"
+                  ><img src="./img/img-categorias/duna.jpg" alt="pelicula Duna"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila1">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/animales.jpg"
+                    alt="pelicula Animales Fantasticos"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila1">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/matrix.jpg"
+                    alt="pelicula Matrix"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila1">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/sonic.jpg"
+                    alt="pelicula Sonic"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila1">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/morbius.jpg"
+                    alt="pelicula Morbius"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila1">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/drstrange.jpg"
+                    alt="pelicula Dr.Strange"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila1">
+                <a href="#"
+                  ><img src="./img/img-categorias/duna.jpg" alt="pelicula Duna"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila1">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/drstrange.jpg"
+                    alt="pelicula Dr. Strange"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <button
+            role="button"
+            id="flecha-derecha"
+            class="flecha-derecha d-none d-xl-block"
+            onclick="botonDerecha1(this.id)"
+          >
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="container categorias">
+        <div class="titulo-controles">
+          <h3>Populares</h3>
+          <div
+            class="indicadores containerIndicadores2 d-none d-xl-block"
+          ></div>
+        </div>
+        <div class="contenedorPrincipal">
+          <button
+            role="button"
+            id="flecha-izquierda"
+            class="flecha-izquierda d-none d-xl-block"
+            onclick="botonIzquierda2(this.id)"
+          >
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+          <div class="contenedorCarousel contenedorJs2">
+            <div class="carousel">
+              <div class="pelicula peliculaFila2">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/morbius.jpg"
+                    alt="pelicula Morbius"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila2">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/drstrange.jpg"
+                    alt="pelicula Duna"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila2">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/animales.jpg"
+                    alt="pelicula Animales Fantasticos"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila2">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/matrix.jpg"
+                    alt="pelicula Matrix"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila2">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/sonic.jpg"
+                    alt="pelicula Sonic"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila2">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/morbius.jpg"
+                    alt="pelicula Morbius"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila2">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/drstrange.jpg"
+                    alt="pelicula Dr.Strange"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila2">
+                <a href="#"
+                  ><img src="./img/img-categorias/duna.jpg" alt="pelicula Duna"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila2">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/animales.jpg"
+                    alt="pelicula Animales Fantasticos"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila2">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/matrix.jpg"
+                    alt="pelicula Matrix"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila2">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/sonic.jpg"
+                    alt="pelicula Sonic"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila2">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/morbius.jpg"
+                    alt="pelicula Morbius"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila2">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/drstrange.jpg"
+                    alt="pelicula Dr.Strange"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila2">
+                <a href="#"
+                  ><img src="./img/img-categorias/duna.jpg" alt="pelicula Duna"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila2">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/animales.jpg"
+                    alt="pelicula Animales Fantasticos"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila2">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/matrix.jpg"
+                    alt="pelicula Matrix"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila2">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/sonic.jpg"
+                    alt="pelicula Sonic"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila2">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/morbius.jpg"
+                    alt="pelicula Morbius"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila2">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/drstrange.jpg"
+                    alt="pelicula Dr.Strange"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila2">
+                <a href="#"
+                  ><img src="./img/img-categorias/duna.jpg" alt="pelicula Duna"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila2">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/drstrange.jpg"
+                    alt="pelicula Dr. Strange"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <button
+            role="button"
+            id="flecha-derecha"
+            class="flecha-derecha d-none d-xl-block"
+            onclick="botonDerecha2(this.id)"
+          >
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="container categorias">
+        <div class="titulo-controles">
+          <h3>Populares</h3>
+          <div
+            class="indicadores containerIndicadores3 d-none d-xl-block"
+          ></div>
+        </div>
+        <div class="contenedorPrincipal">
+          <button
+            role="button"
+            id="flecha-izquierda"
+            class="flecha-izquierda d-none d-xl-block"
+            onclick="botonIzquierda3(this.id)"
+          >
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+          <div class="contenedorCarousel contenedorJs3">
+            <div class="carousel">
+              <div class="pelicula peliculaFila3">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/morbius.jpg"
+                    alt="pelicula Morbius"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila3">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/drstrange.jpg"
+                    alt="pelicula Duna"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila3">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/animales.jpg"
+                    alt="pelicula Animales Fantasticos"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila3">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/matrix.jpg"
+                    alt="pelicula Matrix"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila3">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/sonic.jpg"
+                    alt="pelicula Sonic"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila3">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/morbius.jpg"
+                    alt="pelicula Morbius"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila3">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/drstrange.jpg"
+                    alt="pelicula Dr.Strange"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila3">
+                <a href="#"
+                  ><img src="./img/img-categorias/duna.jpg" alt="pelicula Duna"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila3">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/animales.jpg"
+                    alt="pelicula Animales Fantasticos"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila3">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/matrix.jpg"
+                    alt="pelicula Matrix"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila3">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/sonic.jpg"
+                    alt="pelicula Sonic"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila3">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/morbius.jpg"
+                    alt="pelicula Morbius"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila3">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/drstrange.jpg"
+                    alt="pelicula Dr.Strange"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila3">
+                <a href="#"
+                  ><img src="./img/img-categorias/duna.jpg" alt="pelicula Duna"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila3">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/animales.jpg"
+                    alt="pelicula Animales Fantasticos"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila3">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/matrix.jpg"
+                    alt="pelicula Matrix"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila3">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/sonic.jpg"
+                    alt="pelicula Sonic"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila3">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/morbius.jpg"
+                    alt="pelicula Morbius"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila3">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/drstrange.jpg"
+                    alt="pelicula Dr.Strange"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila3">
+                <a href="#"
+                  ><img src="./img/img-categorias/duna.jpg" alt="pelicula Duna"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila3">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/drstrange.jpg"
+                    alt="pelicula Dr. Strange"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <button
+            role="button"
+            id="flecha-derecha"
+            class="flecha-derecha d-none d-xl-block"
+            onclick="botonDerecha3(this.id)"
+          >
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="container categorias">
+        <div class="titulo-controles">
+          <h3>Populares</h3>
+          <div
+            class="indicadores containerIndicadores4 d-none d-xl-block"
+          ></div>
+        </div>
+        <div class="contenedorPrincipal">
+          <button
+            role="button"
+            id="flecha-izquierda"
+            class="flecha-izquierda d-none d-xl-block"
+            onclick="botonIzquierda4(this.id)"
+          >
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+          <div class="contenedorCarousel contenedorJs4">
+            <div class="carousel">
+              <div class="pelicula peliculaFila4">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/morbius.jpg"
+                    alt="pelicula Morbius"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila4">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/drstrange.jpg"
+                    alt="pelicula Duna"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila4">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/animales.jpg"
+                    alt="pelicula Animales Fantasticos"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila4">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/matrix.jpg"
+                    alt="pelicula Matrix"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila4">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/sonic.jpg"
+                    alt="pelicula Sonic"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila4">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/morbius.jpg"
+                    alt="pelicula Morbius"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila4">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/drstrange.jpg"
+                    alt="pelicula Dr.Strange"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila4">
+                <a href="#"
+                  ><img src="./img/img-categorias/duna.jpg" alt="pelicula Duna"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila4">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/animales.jpg"
+                    alt="pelicula Animales Fantasticos"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila4">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/matrix.jpg"
+                    alt="pelicula Matrix"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila4">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/sonic.jpg"
+                    alt="pelicula Sonic"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila4">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/morbius.jpg"
+                    alt="pelicula Morbius"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila4">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/drstrange.jpg"
+                    alt="pelicula Dr.Strange"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila4">
+                <a href="#"
+                  ><img src="./img/img-categorias/duna.jpg" alt="pelicula Duna"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila4">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/animales.jpg"
+                    alt="pelicula Animales Fantasticos"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila4">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/matrix.jpg"
+                    alt="pelicula Matrix"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila4">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/sonic.jpg"
+                    alt="pelicula Sonic"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila4">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/morbius.jpg"
+                    alt="pelicula Morbius"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila4">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/drstrange.jpg"
+                    alt="pelicula Dr.Strange"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila4">
+                <a href="#"
+                  ><img src="./img/img-categorias/duna.jpg" alt="pelicula Duna"
+                /></a>
+              </div>
+              <div class="pelicula peliculaFila4">
+                <a href="#"
+                  ><img
+                    src="./img/img-categorias/drstrange.jpg"
+                    alt="pelicula Dr. Strange"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <button
+            role="button"
+            id="flecha-derecha"
+            class="flecha-derecha d-none d-xl-block"
+            onclick="botonDerecha4(this.id)"
+          >
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+     <footer>
+      <div class="container">
+        <div class="row flex-nowrap align-items-center">
+          <div class="col-3">
+            <ul>
+              <li><a href="html/404.html">Audio descriptivo</a></li>
+              <li><a href="html/404.html">Inversionistas</a></li>
+              <li><a href="html/404.html">Avisos legales</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul>
+              <li><a href="html/404.html">Ayuda</a></li>
+              <li><a href="html/404.html">Empleo</a></li>
+              <li><a href="html/404.html">Preferencias</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul>
+              <li><a href="html/404.html">Tarjetas de regalo</a></li>
+              <li><a href="html/404.html">Términos de uso</a></li>
+              <li><a href="html/404.html">Corporativa</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul>
+              <li><a href="html/404.html">Prensa</a></li>
+              <li><a href="html/404.html">Privacidad</a></li>
+              <li><a href="html/contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="container-redes-sociales">
+        <div>
+          <button type="button" class="btn btn-codigo">
+            Codigo de Servicio
+          </button>
+        </div>
+        <div>
+          <a href="html/404.html"> <i class="fa-brands fa-facebook-f"></i></a>
+          <a href="html/404.html"> <i class="fa-brands fa-instagram"></i></a>
+          <a href="html/404.html"> <i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </section>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
