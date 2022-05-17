@@ -4,6 +4,16 @@ let burger = document.querySelector(".botonBurger");
 burger.addEventListener("click", () => {
   burger.classList.toggle("active");
 });
+<<<<<<< HEAD
+
+let nav = document.querySelector("nav");
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    nav.classList.add("bg-nav", "shadow");
+  } else {
+    nav.classList.remove("bg-nav", "shadow");
+  }
+=======
   
 const fila1 = document.querySelector(".contenedorJs1");
 const fila2 = document.querySelector(".contenedorJs2");
@@ -225,4 +235,5 @@ fila3.addEventListener("mouseleave", () => {
 fila4.addEventListener("mouseleave", () => {
   peliculasFila4.forEach((pelicula) => pelicula.classList.remove("hover"));
 
+>>>>>>> 3253f937ff90e3b9083e61531e51816383f6fa8a
 });

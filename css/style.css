@@ -77,6 +77,26 @@ nav {
   color: var(--color-celeste);
   height: 50px;
 }
+.logo-admin {
+  position: fixed;
+  bottom: 60px;
+  left: 10px;
+}
+.button-logout-escondido {
+  display: none;
+}
+.button-logout-activo {
+  display: block;
+}
+.logo-admin-escondido {
+  display: none;
+}
+.logo-admin-activo {
+  display: block;
+}
+.icon-admin:hover {
+  width: 70px;
+}
 
 /* ---------------------MEDIA QUERIES NAVBAR------------- */
 @media (min-width: 992px) {
@@ -110,7 +130,7 @@ nav {
     padding-right: 18px;
     margin-left: 10px;
   }
-
+}
 /*------------------------ PELICULA DESTACADA---------------------- */
 .pelicula-destacada {
   font-family: "Open Sans", sans-serif;
@@ -271,19 +291,6 @@ nav {
     gap: 0;
   }
 }
-
-/* ///////PARA PANTALLA GRANDE */
-/* .pelicula-destacada .description{
-    font-weight: normal;
-    font-size: 1em;
-    line-height: 1.75em;
-    max-width: 50%;
-    margin-bottom: 1.25em;
-} */
-/* .imgBatman {
-  position: relative;
-  right: 450px;
-} */
 
 /*----------- ESTILO FOOTER ---------------*/
 
