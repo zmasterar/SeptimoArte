@@ -69,6 +69,26 @@ nav {
   color: var(--color-celeste);
   height: 50px;
 }
+.logo-admin {
+  position: fixed;
+  bottom: 60px;
+  left: 10px;
+}
+.button-logout-escondido {
+  display: none;
+}
+.button-logout-activo {
+  display: block;
+}
+.logo-admin-escondido {
+  display: none;
+}
+.logo-admin-activo {
+  display: block;
+}
+.icon-admin:hover {
+  width: 70px;
+}
 
 /* ---------------------MEDIA QUERIES NAVBAR------------- */
 @media (min-width: 992px) {
