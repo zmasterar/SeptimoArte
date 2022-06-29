@@ -150,12 +150,14 @@ formulario.addEventListener("submit", (e) => {
 const valueUsuario = document.getElementById("usuario");
 const valueEmail = document.getElementById("email");
 const valuePassword = document.getElementById("password");
+const valuePassword2 = document.getElementById("password2");
 const buttonRegister = document.getElementById("buttonRegister");
 buttonRegister.addEventListener("click", () => {
   if (
     valueUsuario.value == "" ||
     valueEmail.value == "" ||
-    valuePassword.value == ""
+    valuePassword.value == "" ||
+    valuePassword2.value == ""
   ) {
     alert("Rellena todo, o no te registras");
   } else {
@@ -173,9 +175,8 @@ buttonRegister.addEventListener("click", () => {
     })
       .then((response) => response.json())
       .then((response) => {
-        console.log(response)
-        window.location.href = "login.html";
+        console.log(response);
+        window.location.href = "./login.html";
       });
-    
   }
 });

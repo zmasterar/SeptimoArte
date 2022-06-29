@@ -28,7 +28,7 @@ function mostrarBotonAdmin() {
 
 function cerrarSesion() {
   localStorage.removeItem("user");
-  window.location.href = "index.html";
+  window.location.href = "./index.html";
 }
 
 function obtener(userAccount, pass) {
@@ -47,7 +47,7 @@ function obtener(userAccount, pass) {
             role: usuario.role,
           };
           localStorage.setItem("user", JSON.stringify(userLog));
-          window.location.href = "index.html";
+          window.location.href = "../index.html";
         } else {
           alert("El email o la contraseña son incorrectas");
         }

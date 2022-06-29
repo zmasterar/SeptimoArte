@@ -4,7 +4,6 @@ let burger = document.querySelector(".botonBurger");
 burger.addEventListener("click", () => {
   burger.classList.toggle("active");
 });
-<<<<<<< HEAD
 
 let nav = document.querySelector("nav");
 window.addEventListener("scroll", () => {
@@ -13,8 +12,8 @@ window.addEventListener("scroll", () => {
   } else {
     nav.classList.remove("bg-nav", "shadow");
   }
-=======
-  
+});
+
 const fila1 = document.querySelector(".contenedorJs1");
 const fila2 = document.querySelector(".contenedorJs2");
 const fila3 = document.querySelector(".contenedorJs3");
@@ -29,49 +28,21 @@ const botonDerecha1 = (id) => {
   const flechaDerecha1 = document.getElementById(id);
   fila1.scrollLeft += fila1.offsetWidth;
   console.log(id);
-  const indicadorActivo = document.querySelector(
-    ".containerIndicadores1 .active"
-  );
-  if (indicadorActivo.nextSibling) {
-    indicadorActivo.nextSibling.classList.add("active");
-    indicadorActivo.classList.remove("active");
-  }
 };
 const botonDerecha2 = (id) => {
   const flechaDerecha2 = document.getElementById(id);
   fila2.scrollLeft += fila2.offsetWidth;
   console.log(id);
-  const indicadorActivo = document.querySelector(
-    ".containerIndicadores2 .active"
-  );
-  if (indicadorActivo.nextSibling) {
-    indicadorActivo.nextSibling.classList.add("active");
-    indicadorActivo.classList.remove("active");
-  }
 };
 const botonDerecha3 = (id) => {
   const flechaDerecha3 = document.getElementById(id);
   fila3.scrollLeft += fila3.offsetWidth;
   console.log(id);
-  const indicadorActivo = document.querySelector(
-    ".containerIndicadores3 .active"
-  );
-  if (indicadorActivo.nextSibling) {
-    indicadorActivo.nextSibling.classList.add("active");
-    indicadorActivo.classList.remove("active");
-  }
 };
 const botonDerecha4 = (id) => {
   const flechaDerecha4 = document.getElementById(id);
   fila4.scrollLeft += fila4.offsetWidth;
   console.log(id);
-  const indicadorActivo = document.querySelector(
-    ".containerIndicadores4 .active"
-  );
-  if (indicadorActivo.nextSibling) {
-    indicadorActivo.nextSibling.classList.add("active");
-    indicadorActivo.classList.remove("active");
-  }
 };
 
 // ----------EVENTO PARA LA FLECHA IZQUIERDA-------------//
@@ -79,161 +50,133 @@ const botonIzquierda1 = (id) => {
   const flechaIzquierda1 = document.getElementById(id);
   fila1.scrollLeft -= fila1.offsetWidth;
   console.log(id);
-  const indicadorActivo = document.querySelector(
-    ".containerIndicadores1 .active"
-  );
-  if (indicadorActivo.previousSibling) {
-    indicadorActivo.previousSibling.classList.add("active");
-    indicadorActivo.classList.remove("active");
-  }
 };
 const botonIzquierda2 = (id) => {
   const flechaIzquierda2 = document.getElementById(id);
   fila2.scrollLeft -= fila2.offsetWidth;
   console.log(id);
-  const indicadorActivo = document.querySelector(
-    ".containerIndicadores2 .active"
-  );
-  if (indicadorActivo.previousSibling) {
-    indicadorActivo.previousSibling.classList.add("active");
-    indicadorActivo.classList.remove("active");
-  }
 };
 const botonIzquierda3 = (id) => {
   const flechaIzquierda3 = document.getElementById(id);
   fila3.scrollLeft -= fila3.offsetWidth;
   console.log(id);
-  const indicadorActivo = document.querySelector(
-    ".containerIndicadores3 .active"
-  );
-  if (indicadorActivo.previousSibling) {
-    indicadorActivo.previousSibling.classList.add("active");
-    indicadorActivo.classList.remove("active");
-  }
 };
 const botonIzquierda4 = (id) => {
   const flechaIzquierda4 = document.getElementById(id);
   fila4.scrollLeft -= fila4.offsetWidth;
   console.log(id);
-  const indicadorActivo = document.querySelector(
-    ".containerIndicadores4 .active"
-  );
-  if (indicadorActivo.previousSibling) {
-    indicadorActivo.previousSibling.classList.add("active");
-    indicadorActivo.classList.remove("active");
-  }
 };
+const carouselInner = document.getElementById("carousel-inner");
+fetch("http://localhost:3000/destacados")
+  .then((response) => response.json())
+  .then((response) => {
+    response.map((peli) => {
+      const carouselItem = document.createElement("div");
+      const peliCarousel = `
+              <img
+                src="${peli.img}"
+                class="imgCarousel"
+                alt="pelicula"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="titulo">
+                  ${peli.title}
+                  <span class="iconoDestacado"
+                    ><img
+                      src="../RollingProyecto2/img/img-Destacados/iconoDestacado.png"
+                      alt="icono destacado"
+                  /></span>
+                </h5>
+                <p>
+                  ${peli.desc}
+                </p>
+                <a
+                  class="text-decoration-none btn boton mb-5"
+                  href="../RollingProyecto2/html/404.html"
+                  type="button"
+                  ><i class="fa-solid fa-play"></i>Reproducir</a
+                >
+              </div>
+                `;
 
-//----------------INDICADORES------------------------
-const numeroIndicadoresFila1 = Math.ceil(peliculasFila1.length / 5);
-const numeroIndicadoresFila2 = Math.ceil(peliculasFila2.length / 5);
-const numeroIndicadoresFila3 = Math.ceil(peliculasFila3.length / 5);
-const numeroIndicadoresFila4 = Math.ceil(peliculasFila4.length / 5);
-for (let i = 0; i < numeroIndicadoresFila1; i++) {
-  const indicador = document.createElement("button");
-  if (i === 0) {
-    indicador.classList.add("active");
-  }
-  document.querySelector(".containerIndicadores1").appendChild(indicador);
-  indicador.addEventListener("click", (e) => {
-    fila1.scrollLeft = i * fila1.offsetWidth;
-    document
-      .querySelector(".containerIndicadores1 .active")
-      .classList.remove("active");
-    e.target.classList.add("active");
+      carouselItem.className = "carousel-item pelicula-destacada";
+      carouselItem.innerHTML = peliCarousel;
+      carouselInner.appendChild(carouselItem);
+    });
   });
-}
-for (let i = 0; i < numeroIndicadoresFila2; i++) {
-  const indicador = document.createElement("button");
-  if (i === 0) {
-    indicador.classList.add("active");
-  }
-  document.querySelector(".containerIndicadores2").appendChild(indicador);
-  indicador.addEventListener("click", (e) => {
-    fila2.scrollLeft = i * fila2.offsetWidth;
-    document
-      .querySelector(".containerIndicadores2 .active")
-      .classList.remove("active");
-    e.target.classList.add("active");
-  });
-}
-for (let i = 0; i < numeroIndicadoresFila3; i++) {
-  const indicador = document.createElement("button");
-  if (i === 0) {
-    indicador.classList.add("active");
-  }
-  document.querySelector(".containerIndicadores3").appendChild(indicador);
-  indicador.addEventListener("click", (e) => {
-    fila3.scrollLeft = i * fila3.offsetWidth;
-    document
-      .querySelector(".containerIndicadores3 .active")
-      .classList.remove("active");
-    e.target.classList.add("active");
-  });
-}
-for (let i = 0; i < numeroIndicadoresFila4; i++) {
-  const indicador = document.createElement("button");
-  if (i === 0) {
-    indicador.classList.add("active");
-  }
-  document.querySelector(".containerIndicadores4").appendChild(indicador);
-  indicador.addEventListener("click", (e) => {
-    fila4.scrollLeft = i * fila4.offsetWidth;
-    document
-      .querySelector(".containerIndicadores4 .active")
-      .classList.remove("active");
-    e.target.classList.add("active");
-  });
-}
 
-// --------------HOVER PELICULAS----------------------
-peliculasFila1.forEach((pelicula) => {
-  pelicula.addEventListener("mouseenter", (e) => {
-    const elemento = e.currentTarget;
-    setTimeout(() => {
-      peliculasFila1.forEach((pelicula) => pelicula.classList.remove("hover"));
-      elemento.classList.add("hover");
-    }, 300);
+const containerPopulares = document.getElementById("containerPopulares");
+fetch(
+  "https://api.themoviedb.org/3/movie/popular?api_key=08f4ac90b9e9e07dad9b84738e14c7f2&language=es-MX"
+)
+  .then((response) => response.json())
+  .then((response) => {
+    response.results.map((pelicula) => {
+      const divPelicula = document.createElement("div");
+      const peliculaCont = `<a href="#"><img
+      src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}"
+      alt=""/>
+      </a>
+      `;
+      divPelicula.className = "pelicula peliculaFila1";
+      divPelicula.innerHTML = peliculaCont;
+      containerPopulares.appendChild(divPelicula);
+    });
   });
-});
-peliculasFila2.forEach((pelicula) => {
-  pelicula.addEventListener("mouseenter", (e) => {
-    const elemento = e.currentTarget;
-    setTimeout(() => {
-      peliculasFila2.forEach((pelicula) => pelicula.classList.remove("hover"));
-      elemento.classList.add("hover");
-    }, 300);
-  });
-});
-peliculasFila3.forEach((pelicula) => {
-  pelicula.addEventListener("mouseenter", (e) => {
-    const elemento = e.currentTarget;
-    setTimeout(() => {
-      peliculasFila3.forEach((pelicula) => pelicula.classList.remove("hover"));
-      elemento.classList.add("hover");
-    }, 300);
-  });
-});
-peliculasFila4.forEach((pelicula) => {
-  pelicula.addEventListener("mouseenter", (e) => {
-    const elemento = e.currentTarget;
-    setTimeout(() => {
-      peliculasFila4.forEach((pelicula) => pelicula.classList.remove("hover"));
-      elemento.classList.add("hover");
-    }, 300);
-  });
-});
-fila1.addEventListener("mouseleave", () => {
-  peliculasFila1.forEach((pelicula) => pelicula.classList.remove("hover"));
-});
-fila2.addEventListener("mouseleave", () => {
-  peliculasFila2.forEach((pelicula) => pelicula.classList.remove("hover"));
-});
-fila3.addEventListener("mouseleave", () => {
-  peliculasFila3.forEach((pelicula) => pelicula.classList.remove("hover"));
-});
-fila4.addEventListener("mouseleave", () => {
-  peliculasFila4.forEach((pelicula) => pelicula.classList.remove("hover"));
 
->>>>>>> 3253f937ff90e3b9083e61531e51816383f6fa8a
-});
+const containerProximos = document.getElementById("containerProximos");
+fetch(
+  "https://api.themoviedb.org/3/movie/upcoming?api_key=08f4ac90b9e9e07dad9b84738e14c7f2&language=es-MX"
+)
+  .then((response) => response.json())
+  .then((response) => {
+    response.results.map((pelicula) => {
+      const divPelicula = document.createElement("div");
+      const peliculaCont = `<a href="#"><img
+      src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}"
+      alt=""/>
+      </a>
+      `;
+      divPelicula.className = "pelicula peliculaFila1";
+      divPelicula.innerHTML = peliculaCont;
+      containerProximos.appendChild(divPelicula);
+    });
+  });
+
+const containerPuntuacion = document.getElementById("containerPuntuacion");
+fetch(
+  "https://api.themoviedb.org/3/movie/top_rated?api_key=08f4ac90b9e9e07dad9b84738e14c7f2&language=es-MX"
+)
+  .then((response) => response.json())
+  .then((response) => {
+    response.results.map((pelicula) => {
+      const divPelicula = document.createElement("div");
+      const peliculaCont = `<a href="#"><img
+      src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}"
+      alt=""/>
+      </a>
+      `;
+      divPelicula.className = "pelicula peliculaFila1";
+      divPelicula.innerHTML = peliculaCont;
+      containerPuntuacion.appendChild(divPelicula);
+    });
+  });
+
+const containerTV = document.getElementById("containerTV");
+fetch(
+  "https://api.themoviedb.org/3/tv/popular?api_key=08f4ac90b9e9e07dad9b84738e14c7f2&language=es-MX"
+)
+  .then((response) => response.json())
+  .then((response) => {
+    response.results.map((pelicula) => {
+      const divPelicula = document.createElement("div");
+      const peliculaCont = `<a href="#"><img
+      src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}"
+      alt=""/>
+      </a>
+      `;
+      divPelicula.className = "pelicula peliculaFila1";
+      divPelicula.innerHTML = peliculaCont;
+      containerTV.appendChild(divPelicula);
+    });
+  });

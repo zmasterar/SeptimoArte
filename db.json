@@ -20,13 +20,30 @@
       "email": "juan11@gmail.com",
       "password": "juan1",
       "role": "admin"
+    },
+    {
+      "userName": "mor2311",
+      "email": "dbx_22@gmail.com",
+      "password": "lopilato2311",
+      "id": 4
     }
   ],
-  "comments": [
+  "destacados": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "title": "undefined",
+      "gen": "undefined",
+      "desc": "undefined",
+      "img": "undefined",
+      "peliKey": "2",
+      "id": 2
+    },
+    {
+      "title": "ddddd",
+      "gen": "dddd",
+      "desc": "ddddd",
+      "img": "dddd",
+      "peliKey": "3",
+      "id": 3
     }
   ],
   "profile": {

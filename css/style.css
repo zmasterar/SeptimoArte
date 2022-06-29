@@ -1,18 +1,15 @@
-
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 :root {
-    --color-1:#0F044C;
-    --color-2:#141E61;
-    --color-3:#787A91;
-    --color-4:#EEEEEE;
-    --color-celeste: #017aff;
-    --color-azul: #080f29;
+  --color-1: #0f044c;
+  --color-2: #141e61;
+  --color-3: #787a91;
+  --color-4: #eeeeee;
+  --color-celeste: #017aff;
+  --color-azul: #080f29;
 }
 
 body {
@@ -73,10 +70,14 @@ nav {
 .categoriasCanva i {
   color: var(--color-celeste);
 }
+.anchoCanva {
+  width: 22rem;
+}
 .iconoX {
   color: var(--color-celeste);
   height: 50px;
 }
+
 .logo-admin {
   position: fixed;
   bottom: 60px;
@@ -135,33 +136,17 @@ nav {
 .pelicula-destacada {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  min-height: 40.62em;
+  /* min-height: 40.62em; */
   color: #fff;
-  background-position: center center;
-  background-size: cover;
-  display: flex;
-  align-items: end;
-}
-.pelicula1 {
-  background-image: linear-gradient(
+  /* background-position: center center;
+  background-size: cover; */
+  /* background-image: linear-gradient(
       rgba(0, 0, 0, 0.5) 0%,
       rgba(0, 0, 0, 0.5) 100%
     ),
-    url(../img/img-Destacados/batman.jpg);
-}
-.pelicula2 {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 100%
-    ),
-    url(../img/img-Destacados/uncharted.jpg);
-}
-.pelicula3 {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 100%
-    ),
-    url(../img/img-Destacados/spiderman.jpg);
+    url("https://www.themoviedb.org/t/p/original/56v2KjBlU4XaOv9rVYEQypROD7P.jpg"); */
+  /* display: flex;
+  align-items: end; */
 }
 .pelicula-destacada .container {
   margin-bottom: 6.25em;
@@ -188,6 +173,10 @@ nav {
 .pelicula-destacada .boton i {
   margin-right: 1em;
 }
+.imgCarousel {
+  width: 100%;
+  filter: opacity(50%);
+}
 /* ----------------TITULO DE CATEGORIAS Y CONTROLES------------- */
 .titulo-controles {
   display: flex;
@@ -213,7 +202,6 @@ nav {
 /*------------------- CATEGORIAS Y FLECHAS ---------------------*/
 .categorias {
   margin-top: 40px;
-  margin-bottom: 70px;
 }
 .categorias .contenedorPrincipal {
   display: flex;
@@ -273,10 +261,11 @@ nav {
 }
 .contenedorPrincipal .contenedorCarousel .carousel .pelicula img {
   width: 100%;
+  height: 100%;
   vertical-align: top;
 }
 
-/* -------------MEDIA QUERIES------------------ */
+/* -------------MEDIA QUERIES CATEGORIAS------------------ */
 @media (min-width: 768px) {
   .contenedorPrincipal .contenedorCarousel .carousel {
     display: grid;
@@ -294,20 +283,12 @@ nav {
 
 /*----------- ESTILO FOOTER ---------------*/
 
- footer {
+footer {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
 }
-
-.col-3 ul li {
+.list-none {
   list-style: none;
-  padding: 5px;
 }
-.col-3 ul li a {
-  color: var(--color-4);
-  text-decoration: none;
-}
-
 .btn-codigo {
   border: 1px solid var(--color-4);
   color: var(--color-4);
@@ -326,28 +307,25 @@ nav {
   color: var(--color-4);
   font-size: 2em;
   margin: 20px;
-} 
-
+}
 /*---------------- PAGINA 404 --------------------*/
 
 .img-bg {
-    height: 100vh;
-    background-image: url("../img/img-404/img-error-error.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+  height: 100vh;
+  background-image: url("../img/img-404/img-error-error.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .info-404 {
-   width: 600px;
-   padding: 30px;
-   margin: 0 auto;
-   background-color:rgba(215, 215, 215, 0.6);
-   text-align: center;
-
+  width: 600px;
+  padding: 30px;
+  margin: 0 auto;
+  background-color: rgba(215, 215, 215, 0.6);
+  text-align: center;
 }
 .info-404 h1 {
   font-size: 3.5em;
@@ -357,9 +335,8 @@ nav {
   font-size: 1.3em;
 }
 
-.info-404 button a{
+.info-404 button a {
   color: #fff;
   text-decoration: none;
   font-weight: 100;
-
 }
