@@ -40,6 +40,10 @@ const editItem = (id) => {
   });
 };
 
+const setEditModal= (id) => {
+  editButton.setAttribute("onclick", `editItem(${id})`);
+}
+
 const listaPeliculas = document.getElementById("listaPeliculas");
 fetch("http://localhost:3000/destacados")
   .then((response) => response.json())
@@ -54,90 +58,12 @@ fetch("http://localhost:3000/destacados")
             type="button"
             class="btn btn-success m-1"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModalEdit"
+            data-bs-target="#editModal"
             data-bs-whatever="@mdo"
+            onclick="editButton.setAttribute('onclick', 'editItem(${peli.id})');"
           >
           <i class="bi bi-pencil"></i>
           </button>
-          <div
-            class="modal fade"
-            id="exampleModalEdit"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">
-                    Editar Portada de Pelicula
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <form id="formModal">
-                    <div class="mb-3">
-                      <label
-                        for="editNamePeli"
-                        class="col-form-label fw-bold"
-                        >Pelicula:</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="editNamePeli"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label for="editDesc" class="form-label fw-bold"
-                        >Descripcion:</label
-                      >
-                      <textarea
-                        class="form-control"
-                        id="editDesc"
-                        rows="3"
-                      ></textarea>
-                    </div>
-                    <div class="mb-3">
-                      <label for="message-text" class="col-form-label fw-bold"
-                        >Genero:</label
-                      >
-                      <input type="text" class="form-control" id="editGen" />
-                    </div>
-                    <div class="mb-3">
-                      <label for="message-text" class="col-form-label fw-bold"
-                        >URL Imagen Portada:</label
-                      >
-                      <input type="text" class="form-control" id="editImg" />
-                    </div>
-                    <div class="mb-3">
-                  </div>
-                  </form>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Cerrar
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    onclick="editItem(${peli.id})"
-                  >
-                    Editar
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
       <button
           class="btn btn-danger m-1" onclick="deleteItem(${peli.id})"
         ><i class="bi bi-archive"></i></button>
